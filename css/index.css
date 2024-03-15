@@ -1,0 +1,136 @@
+.top {
+    /* display: flex; */
+    width: 100%;
+}
+
+nav {
+    background-color: blueviolet;
+}
+
+.profile-logo {
+    float: left;
+}
+
+.app-heading {
+    text-align: center;
+}
+
+.container {
+    align-items: center;
+}
+
+.col-1 {
+    background-color: aqua;
+    height: 100%;
+}
+
+.create-deleteAll-btn {
+    border: none;
+    padding: 7px;
+    border-radius: 2px;
+    font-weight: bold;
+    color: gray;
+}
+
+.create-note {
+    background-color: greenyellow;
+}
+
+.delete-all {
+    background-color: #900d09;
+}
+
+.check {
+    display: none;
+}
+
+.checkbtn {
+    display: none;
+}
+
+.note-box {
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    /* background-color: black;
+    color: white; */
+}
+
+.notes-title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.note-styles {
+    padding: 5px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.BID {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+    column-gap: 20px;
+}
+
+.text-area {
+    width: 100% !important;
+    height: auto !important;
+    resize: vertical;
+}
+
+.user-data {
+    padding: 10px;
+    height: 100px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.note-controls {
+    border-top: 3px solid black;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 25px;
+    ;
+    /* justify-content: space-between; */
+}
+
+.delete-notes {
+    position: relative;
+    border: none;
+    background-color: red;
+}
+
+.save-notes {
+    position: relative;
+    border: none;
+    background-color: green;
+}
+
+.save-notes {
+    position: relative;
+}
+
+@media (max-width: 576px) {
+    .checkbtn {
+        display: block;
+        font-size: 30px;
+        float: left;
+        cursor: pointer;
+    }
+
+    ul {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        transition: all .5s;
+        align-items: center;
+    }
+}
