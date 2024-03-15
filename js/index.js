@@ -8,12 +8,13 @@ var italicFlag = false;
 document.addEventListener("DOMContentLoaded", function () {
     ShowNotes();
 });
-deleteAllNotes.addEventListener("click", () => {
-    localStorage.clear();
-    location.reload();
-});
+// deleteAllNotes.addEventListener("click", () => {
+//     localStorage.clear();
+//     location.reload();
+// });
 // Function to add a new note
-createNote.addEventListener("click", () => {
+createNote.addEventListener("click", (e) => {
+    e.preventDefault();
     // creating a div with class note-box
     let noteBox = document.createElement("div");
     noteBox.classList.add("note-box");
